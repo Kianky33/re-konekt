@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="../design/rekonektSuivi.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../JavaScript/rekonektSuivi.js" defer></script>
+</head>
+<body>
+    <header>
+    </header>
+    <nav class="menu">
+        <div class="navbar-logo">
+            <a href="#"><img src="../Image/logo.png" alt="Logo"></a>
+        </div>
+        <ul class="menu-links">
+            <li><a href="nouveauClient.html">Nouvelle prise en charge</a></li>        
+            <li><a href="reparationsEnCours.html">Réparations en Cours</a></li>
+            <li><a href="reparationsEnAttentes.html">Réparations en Attentes</a></li>
+            <li><a href="reparationsTerminees.html">Réparations Terminées</a></li>
+            <li><a href="historique.html">Historique</a></li>
+        </ul>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Rechercher un client..."><span class="search-icon">&#128269;</span>
+        </div>
+    </nav>
+    <p><br></p>
+
+    <div class="container">
+        <form>
+            <h2>Réparations En Cours</h2>
+            <a href="reparationsEnCours.html">
+                <img class="imgRep" src="../Image/repCours.png" alt="Réparations En Cours">
+            </a>  
+        </form>
+
+        <form>
+            <h2>Réparations En Attentes</h2>
+            <a href="reparationsEnAttentes.html">
+                <img class="imgRep" src="../Image/repAttente.png" alt="Réparations En Attentes">
+            </a>
+        </form>
+        
+        <form>
+            <h2>Réparations Terminées</h2>
+            <a href="reparationsTerminees.html">
+                <img class="imgRep" src="../Image/repTerminees.png" alt="Réparations En Cours">
+            </a>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Re-KonektSuivi</p>
+    </footer>
+</body>
+</html>

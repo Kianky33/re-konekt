@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réparations Terminées</title>
+    <link rel="stylesheet" href="../design/rekonektSuivi.css">
+    <script src="../JavaScript/rekonektSuivi.js" defer></script>
+    <link rel="stylesheet" href="../design/reparationsTerminees.css">
+    <script src="../JavaScript/reparationsTerminees.js" defer></script>
+</head>
+
+<body class="global">
+    <header>
+    <nav class="menu">
+        <div class="navbar-logo">
+            <a href="rekonektSuivi.html"><img src="../Image/logo.png" alt="Logo"></a>
+        </div>
+        <ul class="menu-links">
+            <li><a href="nouveauClient.html">Nouvelle Prise en Charge</a></li>     
+            <li><a href="reparationsEnCours.html">Réparations en Cours</a></li>
+            <li><a href="reparationsEnAttentes.html">Réparations en Attentes</a></li>
+            <li><a href="reparationsTerminees.html">Réparations Terminées</a></li>
+            <li><a href="historique.html">Historique</a></li>
+        </ul>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Rechercher un client..."><span class="search-icon">&#128269;</span>
+        </div>
+    </nav>
+    <p><br></p>
+</header>
+
+<div class="grid-container" id="ticketsContainer">
+    <!-- Les tickets seront insérés ici -->
+     
+
+    
+</div>
+<script>
+    const switchers = [...document.querySelectorAll('.switcher')]
+
+switchers.forEach(item => {
+item.addEventListener('click', function() {
+    switchers.forEach(item => item.parentElement.classList.remove('is-active'))
+    this.parentElement.classList.add('is-active')
+})
+})
+
+
+</script>
+
+
+    <footer>
+        © 2024 Re-KonektSuivi
+    </footer>
+</body>
+</html>

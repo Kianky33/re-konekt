@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réparations en Attentes</title>
+    <link rel="stylesheet" href="../design/reparationEnAttente.css">
+    <!-- Il est préférable de charger le script à la fin du body -->
+</head>
+<body class="global">
+    <header>
+        <nav class="menu">
+            <div class="navbar-logo">
+                <a href="rekonektSuivi.html"><img src="../Image/logo.png" alt="Logo"></a>
+            </div>
+            <ul class="menu-links">
+                <li><a href="nouveauClient.html">Nouvelle prise en charge</a></li> 
+                <li><a href="reparationsEnCours.html">Réparations en Cours</a></li>
+                <li><a href="reparationsEnAttentes.html">Réparations en Attentes</a></li>
+                <li><a href="reparationsTerminees.html">Réparations Terminées</a></li>
+                <li><a href="historique.html">Historique</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Rechercher un client..."><span class="search-icon">&#128269;</span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteneur principal -->
+    <main>
+        <!-- Section pour les tickets en cours de diagnostic -->
+        <!-- Section pour les tickets en cours de diagnostic -->
+<section class="diagnostic">
+    <h2>En Cours de Diagnostic</h2>
+    <div class="grid-container" id="diagnosticTickets">
+        <div class="ticket-header">
+            <span>Nom</span>
+            <span>Appareil</span>
+            <span>N° Suivi</span>
+            <span>Réparation</span>
+            <!-- Pas besoin du bouton dans l'en-tête -->
+            <span>Action</span>
+        </div>
+        <!-- Les tickets seront insérés ici -->
+    </div>
+</section>
+
+<!-- Section pour les tickets en attente de pièce -->
+<section class="en-attente">
+    <h2>En Attente Pièce</h2>
+    <div class="grid-container" id="enAttenteTickets">
+        <div class="ticket-header">
+            <span>Nom</span>
+            <span>Appareil</span>
+            <span>N° Suivi</span>
+            <span>Réparation</span>
+            <span>Action</span>
+        </div>
+        <!-- Les tickets seront insérés ici -->
+    </div>
+</section>
+
+<!-- Section pour les tickets en attente d'accord -->
+<section class="proposition">
+    <h2>En Attente Accord</h2>
+    <div class="grid-container" id="propositionTickets">
+        <div class="ticket-header">
+            <span>Nom</span>
+            <span>Appareil</span>
+            <span>N° Suivi</span>
+            <span>Réparation</span>
+            <span>Action</span>
+        </div>
+        <!-- Les tickets seront insérés ici -->
+    </div>
+</section>
+
+    </main>
+    
+    
+
+    <footer>
+        <p>&copy; 2024 Re-KonektSuivi</p>
+    </footer>
+
+    <!-- Chargement du script à la fin du body pour une meilleure performance -->
+    <script src="../JavaScript/reparationEnAttente.js"></script>
+</body>
+</html>
+
