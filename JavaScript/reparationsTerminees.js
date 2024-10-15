@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             
                 ticketElement.innerHTML = `
+                  <H3>Réparation Terminée</H3>
                     <div class="compartment">
                         <label class="lab">Nom Prénom:</label>
                         <span class="spa">${ticket.prenom} ${ticket.nom}</span>

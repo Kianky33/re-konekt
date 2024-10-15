@@ -168,3 +168,9 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+h3 {
+    text-align: center;
+    margin-top: 20px;
+    color: #5d6a84;
+}

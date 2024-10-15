@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Créer le contenu du ticket
         ticketElement.innerHTML = `
+          <H3>En Cours de Réparation</H3>
           <div class="compartment">
             <label class="lab">Nom Prénom:</label>
             <span class="spa">${ticket.prenom} ${ticket.nom}</span>
@@ -58,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <span class="spa">${ticket.Proposition || ''}</span>
           </div>
           <div class="compartment">
-            <label class="lab">RESULTAT:</label>
+            <label class="lab">STATUT:</label>
             <div class="compartmentvoyant">
               <div class="bulle vert" onclick="updateStatus('${ticket.num_suivi}', 'Réparé')" onmouseover="showMessage(event)" data-message="Réparé"></div>
               <div class="bulle orange" onclick="updateStatus('${ticket.num_suivi}', 'En Attente Pièce')" onmouseover="showMessage(event)" data-message="En Attente Pièce"></div>
